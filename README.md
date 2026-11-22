@@ -12,7 +12,7 @@ It's plain HTML, CSS and JavaScript, with no build step.
 - Logo: two half-discs passing the baton. Petrol = experience, marigold = the next generation.
 - Colours: petrol `#0E4A47`, marigold `#F3B23A`, ink `#14211F`, mist `#EBF2EF`.
 - Type: Bricolage Grotesque (headings) and Atkinson Hyperlegible (body, designed for low-vision readers).
-- Photos: Pexels (free licence), loaded from images.pexels.com.
+- Photos: Pexels (free licence), stored in the `images/` folder.
 
 ## Deploy on Vercel
 1. On vercel.com, go to **Add New → Project** and import this GitHub repo.
