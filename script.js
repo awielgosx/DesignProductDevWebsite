@@ -16,50 +16,64 @@
   var FR = {
     skip: "Aller au contenu",
     cta: "Ça m'intéresse",
+    nav_how: "Comment ça marche",
+    nav_benefits: "Ce que vous y gagnez",
+    nav_faq: "Questions",
 
-    hero_eyebrow: "Pour celles et ceux qui partent bientôt à la retraite",
+    hero_tag: "Pour celles et ceux qui approchent de la retraite",
     hero_title: "Vous quittez le poste, pas le rôle.",
     hero_sub: "Relais vous permet de continuer à transmettre ce que vous savez aux collègues que vous laissez derrière vous, à votre rythme, 45 minutes à la fois.",
-    hero_note: "Bénévole et non rémunéré · Sans engagement · 1 minute",
-    hero_bubble: "Alors je ne pars pas vraiment\u00a0?",
+    hero_secondary: "Voir comment ça marche",
+    assure1: "Bénévole et non rémunéré",
+    assure2: "Sans engagement",
+    assure3: "Une minute pour s'inscrire",
+    alt_hero: "Un professionnel aux cheveux gris qui rit avec une jeune collègue autour d'une table, dans un bureau lumineux",
 
     card_label: "Nouvelle demande pour vous",
     card_team: "Programmation",
-    card_question: "Comment présenter une émission de prime time au comité de direction\u00a0?",
+    card_question: "Comment présenter une émission de prime time au comité de direction ?",
     card_due: "Pour vendredi",
     card_back_label: "Léa peut vous apprendre en retour",
     card_back_value: "Le montage vidéo avec l'IA",
     card_not_now: "Pas maintenant",
-    card_accept: "Accepter · 45 min",
+    card_accept: "Accepter, 45 min",
 
-    emp_title: "Après toute une carrière, pourquoi tout s'arrêterait-il le dernier jour\u00a0?",
+    emp_title: "Après toute une carrière, pourquoi tout s'arrêterait-il le dernier jour ?",
     emp_body: "Vous avez passé des décennies à bâtir votre expertise. Puis viennent une passation en trois jours, un pot de départ, un badge rendu, et le silence. Pendant ce temps, les juniors qui prennent la suite ont encore des questions auxquelles vous seul pouvez répondre.",
+    lw1_when: "Lundi",
+    lw2_when: "Jeudi",
+    lw3_when: "Vendredi",
+    lw4_when: "La semaine suivante",
     emp_s1: "Passation en 3 jours",
     emp_s2: "Pot de départ",
     emp_s3: "Badge rendu",
     emp_s4: "Le silence",
+    alt_empathy: "Un homme retraité en veste de tweed, debout près d'une grande fenêtre, qui regarde la rue",
 
     how_title: "Comment ça marche",
-    how_sub: "Trois étapes simples.",
+    how_sub: "Trois étapes, et vous gardez la main à chacune d'elles.",
     how1_title: "Avant votre départ",
     how1_body: "Votre entreprise vous propose Relais lors de votre entretien de fin de carrière.",
+    v1_title: "Vous restez notre Alumni Expert",
+    v1_text: "Pendant 2 ans, inclus dans l'abonnement de votre entreprise.",
     how2_title: "Un junior vous sollicite",
-    how2_body: "Vous recevez une demande avec le contexte et le temps nécessaire (par exemple\u00a0: «\u00a0Comment présenter une émission de prime time au comité de direction\u00a0?\u00a0»).",
+    how2_body: "Vous recevez une demande avec le contexte et le temps nécessaire (par exemple : « Comment présenter une émission de prime time au comité de direction ? »).",
+    mini_ctx_label: "Contexte :",
+    mini_ctx: "Comité vendredi, sa toute première présentation.",
     how3_title: "Vous décidez",
     how3_body: "Acceptez, choisissez un créneau qui vous convient, et partagez votre expérience en une séance de 45 minutes.",
-    mini_ctx_label: "Contexte\u00a0:",
-    mini_ctx: "Comité vendredi, sa toute première présentation.",
     mini_pick: "Choisissez un créneau",
     mini_slot1: "Mar. 10h00",
     mini_slot2: "Mer. 15h00",
 
     feat_title: "Ce que vous y gagnez",
+    alt_benefits: "Un homme expérimenté à la barbe blanche montre un écran, et un jeune collègue réagit avec enthousiasme",
     f1_title: "C'est vous qui choisissez",
-    f1_body: "Chaque demande indique d'emblée le sujet, le contexte et la durée. Dites oui, ou «\u00a0pas maintenant\u00a0», sans aucune pression.",
+    f1_body: "Chaque demande indique d'emblée le sujet, le contexte et la durée. Dites oui, ou « pas maintenant », sans aucune pression.",
     f2_title: "Court et limité",
     f2_body: "Une séance dure 45 minutes. Aucun engagement, aucun planning imposé.",
     f3_title: "Un échange dans les deux sens",
-    f3_body: "Les juniors peuvent vous apprendre quelque chose en retour\u00a0: montage vidéo avec l'IA, nouveaux outils, nouvelles tendances. Vous voyez ce que vous recevrez avant d'accepter.",
+    f3_body: "Les juniors peuvent vous apprendre quelque chose en retour : montage vidéo avec l'IA, nouveaux outils, nouvelles tendances. Vous voyez ce que vous recevrez avant d'accepter.",
     f4_title: "Simple à utiliser",
     f4_body: "Les demandes arrivent par l'application ou par SMS.",
     f5_title: "Voyez votre impact",
@@ -70,18 +84,25 @@
     not_title: "Ce que Relais n'est pas",
     not1: "Ni un emploi, ni un travail gratuit que vous devriez à qui que ce soit.",
     not2: "Pas une façon de vous pousser vers la sortie plus tôt.",
-    not3: "Pas une contrainte de temps\u00a0: vous décidez combien et à quelle fréquence.",
+    not3: "Pas une contrainte de temps : vous décidez combien et à quelle fréquence.",
 
+    quote: "« J'étais l'entreprise. »",
+    quote_src: "Extrait de nos entretiens avec 20 personnes proches de la retraite",
     about_title: "Qui sommes-nous",
-    about_body: "Nous sommes une équipe d'entrepreneurs qui conçoit Relais pour une raison simple\u00a0: chaque année, trop d'expérience quitte les entreprises, et trop de retraités ont le sentiment que leur utilité s'est arrêtée du jour au lendemain. Pour nous, la retraite devrait être une transition, pas une rupture. Relais est notre façon de l'explorer, et nous le construisons avec les personnes à qui il s'adresse.",
+    about_body: "Nous sommes une équipe d'entrepreneurs qui conçoit Relais pour une raison simple : chaque année, trop d'expérience quitte les entreprises, et trop de retraités ont le sentiment que leur utilité s'est arrêtée du jour au lendemain. Pour nous, la retraite devrait être une transition, pas une rupture. Relais est notre façon de l'explorer, et nous le construisons avec les personnes à qui il s'adresse.",
 
-    su_title: "Vous aimeriez faire partie des premiers\u00a0?",
-    su_sub: "Laissez vos coordonnées et nous vous préviendrons à l'ouverture de Relais. Cela prend une minute.",
+    su_title: "Vous aimeriez faire partie des premiers ?",
+    su_sub: "Laissez vos coordonnées et nous vous préviendrons quand Relais ouvrira près de chez vous.",
+    next_title: "Et ensuite ?",
+    next1: "Nous vous ajoutons à la liste d'accès anticipé.",
+    next2: "Quand Relais ouvre, nous vous contactons par e-mail.",
+    next3: "Les juniors ne vous sollicitent que si vous le choisissez.",
+    alt_signup: "Un homme retraité au téléphone devant son ordinateur portable, assis à une table en bois sur un balcon ensoleillé",
     su_name: "Prénom",
     su_email: "E-mail",
     su_industry: "Secteur ou fonction d'origine",
-    su_industry_ph: "ex.\u00a0: télévision, directeur des programmes",
-    su_topic: "Sur quel sujet aimeriez-vous le plus aider un jeune collègue\u00a0?",
+    su_industry_ph: "Par exemple : télévision, directeur des programmes",
+    su_topic: "Sur quel sujet aimeriez-vous le plus aider un jeune collègue ?",
     optional: "(facultatif)",
     su_button: "Rejoindre la liste d'accès anticipé",
     su_note: "Bénévole et non rémunéré. Votre e-mail sert uniquement à vous parler de Relais.",
@@ -92,16 +113,18 @@
     th_body: "Vous êtes sur la liste d'accès anticipé. Nous vous écrirons par e-mail. Vous n'avez rien d'autre à faire.",
 
     faq_title: "Vos questions",
-    q1: "Est-ce rémunéré\u00a0?",
+    q1: "Est-ce rémunéré ?",
     a1: "La participation est bénévole. Nous cherchons ce qui la rendrait la plus intéressante pour vous.",
-    q2: "Combien de temps cela prend-il\u00a0?",
+    q2: "Combien de temps cela prend-il ?",
     a2: "Une séance de 45 minutes par demande, uniquement quand vous acceptez.",
-    q3: "Qui sont les juniors\u00a0?",
+    q3: "Qui sont les juniors ?",
     a3: "Des salariés de votre ancienne entreprise, qui posent de vraies questions de travail.",
-    q4: "Dois-je rester en contact avec mon entreprise\u00a0?",
+    q4: "Dois-je rester en contact avec mon entreprise ?",
     a4: "Seulement autant que vous le souhaitez.",
 
-    footer: "Vous quittez le poste, pas le rôle. © 2026, prototype en accès anticipé."
+    footer: "Vous quittez le poste, pas le rôle.",
+    footer_small: "Prototype en accès anticipé, 2026.",
+    credits: "Photographies : Pexels."
   };
 
   var META = {
@@ -120,6 +143,7 @@
   /* Store the English text from the HTML so we can switch back. */
   var textNodes = document.querySelectorAll("[data-i18n]");
   var placeholderNodes = document.querySelectorAll("[data-i18n-placeholder]");
+  var altNodes = document.querySelectorAll("[data-i18n-alt]");
   var EN = {};
   textNodes.forEach(function (el) {
     var key = el.getAttribute("data-i18n");
@@ -127,6 +151,9 @@
   });
   placeholderNodes.forEach(function (el) {
     EN[el.getAttribute("data-i18n-placeholder")] = el.getAttribute("placeholder");
+  });
+  altNodes.forEach(function (el) {
+    EN[el.getAttribute("data-i18n-alt")] = el.getAttribute("alt");
   });
 
   var current = "en";
@@ -143,6 +170,9 @@
     });
     placeholderNodes.forEach(function (el) {
       el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
+    });
+    altNodes.forEach(function (el) {
+      el.setAttribute("alt", t(el.getAttribute("data-i18n-alt")));
     });
     document.documentElement.lang = current;
     document.title = META[current].title;
