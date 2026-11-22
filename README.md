@@ -6,7 +6,13 @@ It's plain HTML, CSS and JavaScript, with no build step.
 - `index.html`: the page, with the English copy
 - `styles.css`: the styling (large type, high contrast, big buttons for older readers)
 - `script.js`: the EN/FR toggle, the French copy and the sign-up form
-- `favicon.svg`: the tab icon
+- `favicon.svg`: the Relais logo mark (also the tab icon)
+
+## Brand
+- Logo: two half-discs passing the baton. Petrol = experience, marigold = the next generation.
+- Colours: petrol `#0E4A47`, marigold `#F3B23A`, ink `#14211F`, mist `#EBF2EF`.
+- Type: Bricolage Grotesque (headings) and Atkinson Hyperlegible (body, designed for low-vision readers).
+- Photos: Pexels (free licence), loaded from images.pexels.com.
 
 ## Deploy on Vercel
 1. On vercel.com, go to **Add New → Project** and import this GitHub repo.
