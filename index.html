@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relais. You leave the job, not the role.</title>
+  <meta name="description" content="Relais lets you keep sharing what you know with the colleagues you leave behind, on your terms, 45 minutes at a time.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Reusable illustrations (flat style, matching the A1 deck) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- Karim: grey hair, round glasses, navy sweater -->
+      <symbol id="karim" viewBox="0 0 160 180">
+        <path d="M18 180 C18 132 48 112 80 112 C112 112 142 132 142 180 Z" fill="#2E3B5B"/>
+        <rect x="70" y="96" width="20" height="22" rx="6" fill="#EDBE92"/>
+        <circle cx="45" cy="74" r="7" fill="#EDBE92"/>
+        <circle cx="115" cy="74" r="7" fill="#EDBE92"/>
+        <circle cx="80" cy="70" r="35" fill="#F3CDA4"/>
+        <path d="M44 70 C42 40 60 30 80 30 C100 30 118 40 116 70 C112 56 104 50 96 48 C88 52 72 52 62 48 C54 50 48 58 44 70 Z" fill="#D8D5CF"/>
+        <circle cx="67" cy="72" r="9.5" fill="#fff" fill-opacity=".35" stroke="#1E1E1E" stroke-width="3"/>
+        <circle cx="93" cy="72" r="9.5" fill="#fff" fill-opacity=".35" stroke="#1E1E1E" stroke-width="3"/>
+        <path d="M76.5 72 H83.5" stroke="#1E1E1E" stroke-width="3"/>
+        <circle cx="67" cy="72" r="2.4" fill="#1E1E1E"/>
+        <circle cx="93" cy="72" r="2.4" fill="#1E1E1E"/>
+        <path d="M71 89 Q80 96 89 89" fill="none" stroke="#1E1E1E" stroke-width="2.6" stroke-linecap="round"/>
+      </symbol>
+      <!-- Léa: young colleague, dark hair in a bun -->
+      <symbol id="lea" viewBox="0 0 160 180">
+        <path d="M22 180 C22 134 50 114 80 114 C110 114 138 134 138 180 Z" fill="#C8463C"/>
+        <rect x="71" y="98" width="18" height="22" rx="6" fill="#C98E62"/>
+        <circle cx="80" cy="30" r="16" fill="#4A2E20"/>
+        <circle cx="80" cy="70" r="33" fill="#D9A273"/>
+        <path d="M47 72 C44 44 60 36 80 36 C100 36 116 44 113 72 C108 58 98 52 80 52 C64 52 52 58 47 72 Z" fill="#4A2E20"/>
+        <circle cx="69" cy="73" r="2.6" fill="#1E1E1E"/>
+        <circle cx="91" cy="73" r="2.6" fill="#1E1E1E"/>
+        <path d="M72 87 Q80 93 88 87" fill="none" stroke="#1E1E1E" stroke-width="2.6" stroke-linecap="round"/>
+      </symbol>
+      <!-- Claire: HR -->
+      <symbol id="claire" viewBox="0 0 160 180">
+        <path d="M22 180 C22 134 50 114 80 114 C110 114 138 134 138 180 Z" fill="#A86C86"/>
+        <rect x="71" y="98" width="18" height="22" rx="6" fill="#EDBE92"/>
+        <circle cx="80" cy="32" r="15" fill="#B07A45"/>
+        <circle cx="80" cy="70" r="33" fill="#F3CDA4"/>
+        <path d="M47 74 C44 44 60 38 80 38 C100 38 116 44 113 74 C110 60 100 54 80 54 C62 54 52 60 47 74 Z" fill="#B07A45"/>
+        <circle cx="69" cy="73" r="2.6" fill="#1E1E1E"/>
+        <circle cx="91" cy="73" r="2.6" fill="#1E1E1E"/>
+        <path d="M72 87 Q80 93 88 87" fill="none" stroke="#1E1E1E" stroke-width="2.6" stroke-linecap="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="#top" aria-label="Relais, back to top">Relais<span class="dot">.</span></a>
+      <div class="header-actions">
+        <button type="button" class="lang-toggle" id="lang-toggle" aria-label="Lire cette page en français">
+          <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg>
+          <span id="lang-toggle-label">Français</span>
+        </button>
+        <a class="btn btn-primary btn-small header-cta" href="#signup" data-track="cta_header" data-i18n="cta">I'm interested</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero_eyebrow">For people about to retire</p>
+          <h1 data-i18n="hero_title">You leave the job, not the role.</h1>
+          <p class="lead" data-i18n="hero_sub">Relais lets you keep sharing what you know with the colleagues you leave behind, on your terms, 45 minutes at a time.</p>
+          <a class="btn btn-primary btn-large" href="#signup" data-track="cta_hero" data-i18n="cta">I'm interested</a>
+          <p class="reassure" data-i18n="hero_note">Voluntary and unpaid · No commitment · Takes 1 minute</p>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="bubble bubble-karim" data-i18n="hero_bubble">So I'm not just leaving?</div>
+          <svg class="hero-karim" viewBox="0 0 160 180"><use href="#karim"/></svg>
+          <div class="req-card">
+            <p class="req-label"><span class="pulse"></span><span data-i18n="card_label">New request for you</span></p>
+            <div class="req-from">
+              <span class="avatar">L</span>
+              <span><strong>Léa</strong> · <span data-i18n="card_team">Programming</span></span>
+            </div>
+            <p class="req-question" data-i18n="card_question">How do I pitch a prime-time show to the board?</p>
+            <div class="chips">
+              <span class="chip">45 min</span>
+              <span class="chip chip-red" data-i18n="card_due">Due Friday</span>
+            </div>
+            <div class="req-back">
+              <span class="req-back-label" data-i18n="card_back_label">Léa can teach you back</span>
+              <span class="req-back-value" data-i18n="card_back_value">AI video editing</span>
+            </div>
+            <div class="req-actions">
+              <span class="ghost" data-i18n="card_not_now">Not now</span>
+              <span class="accept" data-i18n="card_accept">Accept · 45 min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. EMPATHY -->
+    <section class="section section-tint" id="why">
+      <div class="container narrow">
+        <h2 data-i18n="emp_title">After a career, why should it all stop on the last day?</h2>
+        <p class="body-lg" data-i18n="emp_body">You've spent decades building expertise. Then comes a handover in three days, a farewell party, a badge handed back, and silence. Meanwhile, the juniors who take over still have questions only you can answer.</p>
+
+        <ol class="journey" aria-label="A typical last week at work">
+          <li data-i18n="emp_s1">Handover in 3 days</li>
+          <li data-i18n="emp_s2">Farewell party</li>
+          <li data-i18n="emp_s3">Badge handed back</li>
+          <li class="journey-end" data-i18n="emp_s4">Silence</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 3. HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="center" data-i18n="how_title">How it works</h2>
+        <p class="center sub" data-i18n="how_sub">Three simple steps.</p>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step-art" aria-hidden="true">
+              <svg viewBox="0 0 320 200" class="scene">
+                <rect x="0" y="0" width="320" height="200" rx="16" fill="#EFECE6"/>
+                <use href="#karim" x="20" y="38" width="120" height="135"/>
+                <use href="#claire" x="180" y="38" width="120" height="135"/>
+                <rect x="10" y="150" width="300" height="16" rx="4" fill="#9A7B5C"/>
+                <rect x="20" y="166" width="280" height="34" fill="#B38F6B"/>
+                <rect x="124" y="122" width="72" height="28" rx="4" fill="#fff" stroke="#1E1E1E" stroke-width="2"/>
+                <text x="160" y="142" text-anchor="middle" font-family="Source Serif 4, Georgia, serif" font-weight="700" font-size="16" fill="#1E1E1E">Relais<tspan fill="#C62A21">.</tspan></text>
+              </svg>
+            </div>
+            <span class="step-num">1</span>
+            <h3 data-i18n="how1_title">Before you go</h3>
+            <p data-i18n="how1_body">Your company offers you Relais at your end-of-career interview.</p>
+          </li>
+
+          <li class="step">
+            <div class="step-art" aria-hidden="true">
+              <div class="mini-card">
+                <div class="req-from">
+                  <span class="avatar">L</span>
+                  <span><strong>Léa</strong> · <span data-i18n="card_team">Programming</span></span>
+                </div>
+                <p class="mini-q" data-i18n="card_question">How do I pitch a prime-time show to the board?</p>
+                <p class="mini-ctx"><strong data-i18n="mini_ctx_label">Context:</strong> <span data-i18n="mini_ctx">Board meeting on Friday, her first pitch ever.</span></p>
+                <div class="chips"><span class="chip">45 min</span><span class="chip chip-red" data-i18n="card_due">Due Friday</span></div>
+              </div>
+            </div>
+            <span class="step-num">2</span>
+            <h3 data-i18n="how2_title">A junior asks</h3>
+            <p data-i18n="how2_body">You receive a request with the context and the time needed (for example, "How do I pitch a prime-time show to the board?").</p>
+          </li>
+
+          <li class="step">
+            <div class="step-art" aria-hidden="true">
+              <div class="mini-card">
+                <p class="mini-label" data-i18n="mini_pick">Pick a time</p>
+                <div class="slots">
+                  <span class="slot slot-on" data-i18n="mini_slot1">Tue 10:00</span>
+                  <span class="slot" data-i18n="mini_slot2">Wed 15:00</span>
+                </div>
+                <div class="req-actions">
+                  <span class="ghost" data-i18n="card_not_now">Not now</span>
+                  <span class="accept" data-i18n="card_accept">Accept · 45 min</span>
+                </div>
+              </div>
+            </div>
+            <span class="step-num">3</span>
+            <h3 data-i18n="how3_title">You decide</h3>
+            <p data-i18n="how3_body">Accept, pick a time that suits you, and share your experience in one 45-minute session.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 4. WHAT YOU GET -->
+    <section class="section section-tint" id="features">
+      <div class="container">
+        <h2 class="center" data-i18n="feat_title">What you get</h2>
+        <ul class="features">
+          <li class="feature">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3 data-i18n="f1_title">You choose</h3>
+            <p data-i18n="f1_body">Every request shows the topic, the context and the duration upfront. Say yes, or "not now", with no pressure.</p>
+          </li>
+          <li class="feature">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <h3 data-i18n="f2_title">Short and bounded</h3>
+            <p data-i18n="f2_body">One session is 45 minutes. No commitment, no schedule imposed on you.</p>
+          </li>
+          <li class="feature">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7h11l-3-3M17 17H6l3 3"/></svg></span>
+            <h3 data-i18n="f3_title">It goes both ways</h3>
+            <p data-i18n="f3_body">Juniors can teach you back, whether that's AI video editing, new tools or new trends. You see what you'd get before you accept.</p>
+          </li>
+          <li class="feature">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+            <h3 data-i18n="f4_title">Simple to use</h3>
+            <p data-i18n="f4_body">Requests arrive by app or SMS.</p>
+          </li>
+          <li class="feature">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></span>
+            <h3 data-i18n="f5_title">See your impact</h3>
+            <p data-i18n="f5_body">30 days after a session, you get a note on how your help changed things for the person.</p>
+          </li>
+          <li class="feature">
+            <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><circle cx="17" cy="10" r="2.5"/><path d="M3 20c0-3.5 2.7-6 6-6s6 2.5 6 6M15 20c0-2 1-4 3-4s3 2 3 4"/></svg></span>
+            <h3 data-i18n="f6_title">Your network stays yours</h3>
+            <p data-i18n="f6_body">After two years, your contacts remain yours, and you can keep mentoring freely.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. WHAT RELAIS IS NOT -->
+    <section class="section" id="not">
+      <div class="container narrow">
+        <h2 data-i18n="not_title">What Relais is not</h2>
+        <ul class="not-list">
+          <li><span class="x" aria-hidden="true">✕</span><span data-i18n="not1">Not a job, and not unpaid labor you owe anyone.</span></li>
+          <li><span class="x" aria-hidden="true">✕</span><span data-i18n="not2">Not a way of being pushed out earlier.</span></li>
+          <li><span class="x" aria-hidden="true">✕</span><span data-i18n="not3">Not a time sink: you decide how much and how often.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT US -->
+    <section class="section section-tint" id="about">
+      <div class="container narrow about">
+        <h2 data-i18n="about_title">About us</h2>
+        <p class="body-lg" data-i18n="about_body">We're a team of entrepreneurs designing Relais for a simple reason: too much experience leaves companies every year, and too many retirees feel their usefulness ended overnight. We believe retirement should be a transition, not a cut-off. Relais is how we're exploring it, and we're building it with the people it's for.</p>
+      </div>
+    </section>
+
+    <!-- 7. SIGN-UP -->
+    <section class="section signup-section" id="signup">
+      <div class="container narrow">
+        <div class="signup-card">
+          <div id="signup-form-wrap">
+            <h2 data-i18n="su_title">Would you like to be one of the first?</h2>
+            <p class="body-lg" data-i18n="su_sub">Leave your details and we'll tell you when Relais opens. It takes one minute.</p>
+
+            <form id="signup-form" novalidate>
+              <div class="field">
+                <label for="first-name" data-i18n="su_name">First name</label>
+                <input id="first-name" name="first_name" type="text" autocomplete="given-name" required>
+                <p class="error" id="err-first-name" data-i18n="err_name" hidden>Please enter your first name.</p>
+              </div>
+              <div class="field">
+                <label for="email" data-i18n="su_email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+                <p class="error" id="err-email" data-i18n="err_email" hidden>Please enter a valid email, for example name@example.com.</p>
+              </div>
+              <div class="field">
+                <label for="industry" data-i18n="su_industry">Former industry or role</label>
+                <input id="industry" name="industry" type="text" data-i18n-placeholder="su_industry_ph" placeholder="e.g. TV, programming director" required>
+                <p class="error" id="err-industry" data-i18n="err_industry" hidden>Please tell us your former industry or role.</p>
+              </div>
+              <div class="field">
+                <label for="topic"><span data-i18n="su_topic">What topic would you most enjoy helping a younger colleague with?</span> <span class="optional" data-i18n="optional">(optional)</span></label>
+                <textarea id="topic" name="topic" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-large btn-block" data-track="cta_submit" data-i18n="su_button">Join the early-access list</button>
+              <p class="reassure small" data-i18n="su_note">Voluntary and unpaid. We only use your email to tell you about Relais.</p>
+            </form>
+          </div>
+
+          <div id="signup-thanks" class="thanks" hidden tabindex="-1">
+            <div class="thanks-check" aria-hidden="true">✓</div>
+            <h2><span data-i18n="th_title">Thank you</span><span id="thanks-name"></span>.</h2>
+            <p class="body-lg" data-i18n="th_body">You're on the early-access list. We'll write to you by email. There's nothing else you need to do.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAQ -->
+    <section class="section section-tint" id="faq">
+      <div class="container narrow">
+        <h2 data-i18n="faq_title">Questions you may have</h2>
+        <div class="faq">
+          <details>
+            <summary data-i18n="q1">Is it paid?</summary>
+            <p data-i18n="a1">Participation is voluntary. We're exploring what would make it most worthwhile for you.</p>
+          </details>
+          <details>
+            <summary data-i18n="q2">How much time does it take?</summary>
+            <p data-i18n="a2">One 45-minute session per request, only when you accept.</p>
+          </details>
+          <details>
+            <summary data-i18n="q3">Who are the juniors?</summary>
+            <p data-i18n="a3">Employees of your former company, asking real work questions.</p>
+          </details>
+          <details>
+            <summary data-i18n="q4">Do I have to stay in touch with my company?</summary>
+            <p data-i18n="a4">Only as much as you want.</p>
+          </details>
+        </div>
+        <p class="center back-cta">
+          <a class="btn btn-secondary btn-large" href="#signup" data-track="cta_faq" data-i18n="cta">I'm interested</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="wordmark small">Relais<span class="dot">.</span></span>
+      <span data-i18n="footer">You leave the job, not the role. © 2026, early-access prototype.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
